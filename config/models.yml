@@ -1,4 +1,4 @@
-available_text_models: ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4o", "gpt-4-vision-preview", "gpt-4", "text-davinci-003"]
+available_text_models: ["gpt-4o", "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4-vision-preview", "gpt-4"]
 
 info:
   gpt-3.5-turbo:
@@ -65,19 +65,6 @@ info:
       smart: 5
       fast: 4
       cheap: 3
-
-  text-davinci-003:
-    type: completion
-    name: GPT-3.5
-    description: GPT-3.5 is a legacy model. Actually there is <b>no reason to use it</b>, because it is more expensive and slower than ChatGPT, but just about as smart.
-
-    price_per_1000_input_tokens: 0.02
-    price_per_1000_output_tokens: 0.02
-
-    scores:
-      Smart: 3
-      Fast: 2
-      Cheap: 3
 
   dalle-2:
      type: image
