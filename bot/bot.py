@@ -332,9 +332,9 @@ async def unsupport_message_handle(update: Update, context: CallbackContext, mes
     # check if bot was mentioned (for group chats)
     if not await is_bot_mentioned(update, context):
         return
-    error_text = f"I don't know how to read files or videos. Send the picture in normal mode (Quick Mode)."
-    logger.error(error_text)
-    await update.message.reply_text(error_text)
+    # error_text = f"I don't know how to read files or videos. Send the picture in normal mode (Quick Mode)."
+    # logger.error(error_text)
+    # await update.message.reply_text(error_text)
     return
 
 async def message_handle(update: Update, context: CallbackContext, message=None, use_new_dialog_timeout=True):
